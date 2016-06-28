@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Clothes Shop</title>
+    <link rel="Stylesheet" href="Styles/StyleSheet.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="wrapper">
+                <div id="banner">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Banner.jpg" Height="30%"
+                        Width="100%"/>
+                </div>
+                <div id="navigation">
+                    <ul id="nav">
+                    <li>
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/Home.aspx">Home</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/Store.aspx">Browse</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/About.aspx">About Us</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/CustomerLogin.aspx">Login</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Pages/Shopping_Cart.aspx">Shopping Cart</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Pages/AdminLogin.aspx">Admin</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Pages/CustomerAccount.aspx">Account</asp:HyperLink></li>
+                    </ul>
+                </div>
+               
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+    </form>
+<footer id="footer">Copyright © 2016 The Six Stooges    Legal   Privacy Policy</footer>
+
+</body>
+</html>
+
